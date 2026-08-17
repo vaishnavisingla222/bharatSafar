@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>भारत Safar | Book Now</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>भारत Safar</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="packages.html">Packages</a>
+        <a href="booking.html">Book Now</a>
+        <a href="gallery.html">Gallery</a>
+      </nav>
+    </header>
+    <section class="bookForm">
+      <h2>Book Your Dream Trip</h2>
+      <form>
+        <label for="name">Full Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your full name"
+          required
+        />
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+        <label for="phone">Phone Number:</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="Enter phone number"
+          required
+        />
+        <label for="package">Select Package:</label>
+        <select id="package" name="package" required>
+          <option value="">-- Select Package --</option>
+          <option value="north">Pahado Ki Aur</option>
+          <option value="west">Royal Rajasthan & Gujrat</option>
+          <option value="east">Seven Sister's Escape</option>
+          <option value="south">Kerala Paradise</option>
+        </select>
+
+        <label for="start">Travel Start Date:</label>
+        <input type="date" id="start" name="start" required />
+        <label for="end">Travel End Date:</label>
+        <input type="date" id="end" name="end" required />
+
+        <label for="people">Number of Travelers:</label>
+        <input
+          type="number"
+          id="people"
+          name="people"
+          min="1"
+          max="20"
+          required
+        />
+
+        <label>Travel Type:</label>
+        <div class="radio-group">
+          <input type="radio" id="solo" name="travelType" value="solo" />
+          <label for="solo">Solo</label>
+
+          <input type="radio" id="family" name="travelType" value="family" />
+          <label for="family">Family</label>
+
+          <input type="radio" id="friends" name="travelType" value="friends" />
+          <label for="friends">Friends</label>
+        </div>
+
+        <label for="requests">Special Requests:</label>
+
+        <textarea
+          id="requests"
+          name="requests"
+          placeholder="Enter any special requirements..."
+        ></textarea>
+
+        <div class="bookForm-buttons">
+          <button type="submit">Submit Booking</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
